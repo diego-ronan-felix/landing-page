@@ -2,6 +2,7 @@
     class="flex flex-col w-full h-screen bg-indigo-900"
     x-data="{
         showSubscribe: false,
+        showSuccess: false,
     }"
 >
     <nav class="container flex justify-between pt-5 mx-auto text-indigo-200">
@@ -33,35 +34,38 @@
             </x-primary-button>
         </div>
     </div>
-    <div 
-        x-cloak
-        class="fixed top-0 flex items-center w-full h-full bg-gray-900 bg-opacity-60"
-        x-show="showSubscribe"
-        x-on:click.self="showSubscribe = false"
-        x-on:keydown.escape.window="showSubscribe = false"
-    >
-        <div class="p-8 m-auto bg-pink-500 shadow-2xl rounded-xl">
-            <p class="text-5xl font-extrabold text-center text-white">
-                Let's do it!
-            </p>
-            <form class="flex flex-col items-center p-24" wire:submit="subscribe">
-                <x-text-input 
-                    class="px-5 py-3 border border-blue-400 w-80" 
-                    type="email" 
-                    name="email" 
-                    placeholder="E-mail address"
-                    wire:model="email"
-                >
-                </x-text-input>
-                <span class="text-sm text-gray-100">
-                    We will send you a confirmation e-mail.
-                </span>
-                <x-primary-button 
-                    class="justify-center px-5 py-3 mt-5 bg-indigo-900 hover:bg-indigo-700 w-80"
-                >
-                    Get In
-                </x-primary-button>
-            </form>
-        </div>
-    </div>
+    <x-mymodal class="bg-pink-500" trigger="showSubscribe">
+        <p class="text-5xl font-extrabold text-center text-white">
+            Let's do it!
+        </p>
+        <form class="flex flex-col items-center p-24" wire:submit="subscribe">
+            <x-text-input 
+                class="px-5 py-3 border border-blue-400 w-80" 
+                type="email" 
+                name="email" 
+                placeholder="E-mail address"
+                wire:model="email"
+            >
+            </x-text-input>
+            <span class="text-sm text-gray-100">
+                We will send you a confirmation e-mail.
+            </span>
+            <x-primary-button 
+                class="justify-center px-5 py-3 mt-5 bg-indigo-900 hover:bg-indigo-700 w-80"
+            >
+                Get In
+            </x-primary-button>
+        </form>
+    </x-mymodal>
+    <x-mymodal class="bg-green-500" trigger="showSuccess">
+        <p class="font-extrabold text-center text-white text-9xl animate-pulse">
+            &check;
+        </p>
+        <p class="mt-16 text-5xl font-extrabold text-center text-white">
+            Great!
+        </p>
+        <p class="text-3xl text-center text-white">
+            See you in your inbox.
+        </p>
+    </x-mymodal>
 </div>

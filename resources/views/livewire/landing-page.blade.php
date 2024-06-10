@@ -1,8 +1,8 @@
 <div 
     class="flex flex-col w-full h-screen bg-indigo-900"
     x-data="{
-        showSubscribe: false,
-        showSuccess: false,
+        showSubscribe: @entangle('showSubscribe'),
+        showSuccess: @entangle('showSuccess'),
     }"
 >
     <nav class="container flex justify-between pt-5 mx-auto text-indigo-200">
@@ -48,7 +48,11 @@
             >
             </x-text-input>
             <span class="text-sm text-gray-100">
-                We will send you a confirmation e-mail.
+                {{ 
+                    $errors->has('email') 
+                    ? $errors->first('email') 
+                    : 'We will send you a confirmation e-mail.'
+                }}
             </span>
             <x-primary-button 
                 class="justify-center px-5 py-3 mt-5 bg-indigo-900 hover:bg-indigo-700 w-80"
@@ -64,8 +68,14 @@
         <p class="mt-16 text-5xl font-extrabold text-center text-white">
             Great!
         </p>
-        <p class="text-3xl text-center text-white">
-            See you in your inbox.
-        </p>
+        @if (request()->has('verified') && request()->verified == 1)
+            <p class="text-3xl text-center text-white">
+                Thanks for confirming!
+            </p>
+        @else
+            <p class="text-3xl text-center text-white">
+                See you in your inbox!
+            </p>
+        @endif
     </x-mymodal>
 </div>

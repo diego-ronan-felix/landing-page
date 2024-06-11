@@ -1,3 +1,3 @@
-<x-guest-layout>
+<x-landing-page-layout>
     <livewire:landing-page></livewire:landing-page>
-</x-guest-layout>
+</x-landing-page-layout>

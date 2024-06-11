@@ -57,7 +57,12 @@
             <x-primary-button 
                 class="justify-center px-5 py-3 mt-5 bg-indigo-900 hover:bg-indigo-700 w-80"
             >
-                Get In
+                <span class="animate-spin" wire:loading wire:target="subscribe">
+                    &#9696;
+                </span>
+                <span wire:loading.remove wire:target="subscribe">
+                    Get In
+                </span>
             </x-primary-button>
         </form>
     </x-mymodal>

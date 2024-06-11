@@ -12,6 +12,13 @@
                     <p class="mb-6 text-xl font-bold text-gray-600">
                         {{ __("Actions") }}
                     </p>
+                    <ul class="pl-5 list-disc">
+                        <li class="text-blue-500 hover:underline">
+                            <a href="{{ route('subscribers.all') }}">
+                                Manage Subscribers
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

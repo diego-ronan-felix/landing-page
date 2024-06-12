@@ -10,12 +10,12 @@
             <div class="overflow-hidden bg-white shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
                     <p class="mb-6 text-xl font-bold text-gray-600">
-                        {{ __("Actions") }}
+                        {{ __("Ações") }}
                     </p>
                     <ul class="pl-5 list-disc">
                         <li class="text-blue-500 hover:underline">
                             <a href="{{ route('subscribers.all') }}">
-                                Manage Subscribers
+                                Gerenciar Assinantes
                             </a>
                         </li>
                     </ul>

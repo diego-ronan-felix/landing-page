@@ -21,29 +21,29 @@
     <div class="container flex items-center h-full mx-auto">
         <div class="flex flex-col items-start w-1/3">
             <h1 class="mb-4 text-5xl font-bold leading-tight text-white">
-                Simple generic landing page to subscribe
+                Uma landing page simples para se inscrever!
             </h1>
             <p class="mb-10 text-xl text-indigo-200">
-                We are just checking the <span class="font-bold underline">TALL</span> stack. Would you mind subscribing?
+                Landing page simples usando <span class="font-bold underline">TALL</span> stack. Você se importaria de se inscrever?
             </p>
             <x-primary-button 
                 class="px-8 py-3 bg-pink-500 hover:bg-pink-700"
                     x-on:click="showSubscribe = true"
             >
-                Subscribe
+                Se inscrever
             </x-primary-button>
         </div>
     </div>
     <x-mymodal class="bg-pink-500" trigger="showSubscribe">
         <p class="text-5xl font-extrabold text-center text-white">
-            Let's do it!
+            Vamos lá!
         </p>
         <form class="flex flex-col items-center p-24" wire:submit="subscribe">
             <x-text-input 
                 class="px-5 py-3 border border-blue-400 w-80" 
                 type="email" 
                 name="email" 
-                placeholder="E-mail address"
+                placeholder="Digite seu e-mail"
                 wire:model="email"
             >
             </x-text-input>
@@ -51,7 +51,7 @@
                 {{ 
                     $errors->has('email') 
                     ? $errors->first('email') 
-                    : 'We will send you a confirmation e-mail.'
+                    : 'Nós lhe enviaremos um e-mail de confirmação.'
                 }}
             </span>
             <x-primary-button 
@@ -61,7 +61,7 @@
                     &#9696;
                 </span>
                 <span wire:loading.remove wire:target="subscribe">
-                    Get In
+                    Entrar
                 </span>
             </x-primary-button>
         </form>
@@ -75,11 +75,11 @@
         </p>
         @if (request()->has('verified') && request()->verified == 1)
             <p class="text-3xl text-center text-white">
-                Thanks for confirming!
+                Obrigado por confirmar!
             </p>
         @else
             <p class="text-3xl text-center text-white">
-                See you in your inbox!
+                Vejo você na sua caixa de entrada!
             </p>
         @endif
     </x-mymodal>

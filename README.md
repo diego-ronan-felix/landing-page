@@ -1,4 +1,4 @@
-# Landing Page Simples
+# Projeto Landing Page
 
 Este é um projeto de uma landing page simples com um sistema de inscrição e gerenciamento de inscritos. O projeto foi desenvolvido utilizando Tailwind CSS, Alpine.js, Laravel e Livewire. Para o ambiente de desenvolvimento, foram utilizados Laravel Sail e Mailpit.
 

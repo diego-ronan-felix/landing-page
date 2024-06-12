@@ -73,3 +73,23 @@ Para iniciar o servidor de desenvolvimento:
 
 ```bash
 ./vendor/bin/sail up
+
+
+O aplicativo estará disponível em [http://localhost](http://localhost).
+
+Para acessar o Mailpit e visualizar os emails de teste:
+
+[http://localhost:8025](http://localhost:8025)
+
+## Uso
+
+### Inscrição
+
+1. Visite a landing page.
+2. Insira seu email no campo de inscrição e envie o formulário.
+3. Você receberá um email de confirmação (configurado com Mailpit no ambiente de desenvolvimento).
+
+### Gerenciamento de Inscritos
+
+1. Acesse a interface administrativa.
+2. Você poderá listar todos os inscritos, pesquisar por email e deletar inscrições.

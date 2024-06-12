@@ -108,6 +108,7 @@ Este projeto foi desenvolvido com base no conhecimento adquirido no curso "Start
 
     ```bash
     http://localhost
+    http://localhost:8025
     ```
 
 

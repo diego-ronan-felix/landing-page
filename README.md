@@ -61,6 +61,24 @@ Este projeto foi desenvolvido com base no conhecimento adquirido no curso "Start
     laravelsail/php83-composer:latest \
     composer install --ignore-platform-reqs
     ```
+    
+4. Suba os containers do Laravel Sail:
+
+    ```bash
+    ./vendor/bin/sail up -d
+    ```
+
+5. Gere a chave da aplicação:
+
+    ```bash
+    ./vendor/bin/sail artisan key:generate
+    ```
+
+6. Execute as migrações do banco de dados:
+
+    ```bash
+    ./vendor/bin/sail artisan migrate
+    ```
 
 # Screenshoots
 

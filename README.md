@@ -51,6 +51,18 @@ Este projeto foi desenvolvido com base no conhecimento adquirido no curso "Start
     ```bash
     cp .env.example .env
     ```
+
+4. Abra o arquivo .env em um editor de texto e configure as variáveis de ambiente conforme mostrado abaixo:
+
+   ```bash
+    DB_CONNECTION=mysql
+    DB_HOST=mysql
+    DB_PORT=3306
+    DB_DATABASE=laravel
+    DB_USERNAME=sail
+    DB_PASSWORD=password
+    ```
+   
 3. Instale as dependências do projeto:
 
     ```bash
@@ -61,23 +73,35 @@ Este projeto foi desenvolvido com base no conhecimento adquirido no curso "Start
     laravelsail/php83-composer:latest \
     composer install --ignore-platform-reqs
     ```
-    
-4. Suba os containers do Laravel Sail:
+        
+6. Suba os containers do Laravel Sail:
 
     ```bash
     ./vendor/bin/sail up -d
     ```
 
-5. Gere a chave da aplicação:
+7. Gere a chave da aplicação:
 
     ```bash
     ./vendor/bin/sail artisan key:generate
     ```
 
-6. Execute as migrações do banco de dados:
+8. Execute as migrações do banco de dados:
 
     ```bash
     ./vendor/bin/sail artisan migrate
+    ```
+    
+9. Instale as dependências listadas no package.json:
+
+    ```bash
+    ./vendor/bin/sail npm install
+    ```
+
+10. Execute esse comando para iniciar o Vite
+
+    ```bash
+    ./vendor/bin/sail npm run dev
     ```
 
 # Screenshoots

@@ -20,9 +20,9 @@ Este é um projeto de uma landing page simples com um sistema de inscrição e g
 
 ![Print de Tela 1](public/img/01.png)
 
-![Print de Tela 1](public/img/02.png)
-
 ![Print de Tela 1](public/img/03.png)
+
+![Print de Tela 1](public/img/02.png)
 
 ![Print de Tela 1](public/img/04.png)
 

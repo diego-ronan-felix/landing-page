@@ -69,12 +69,6 @@ Este é um projeto de uma landing page simples com um sistema de inscrição e g
 
 ### Desenvolvimento
 
-Para iniciar o servidor de desenvolvimento:
-
-```bash
-./vendor/bin/sail up
-
-
 O aplicativo estará disponível em [http://localhost](http://localhost).
 
 Para acessar o Mailpit e visualizar os emails de teste:

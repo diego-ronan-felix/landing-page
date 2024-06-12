@@ -103,6 +103,13 @@ Este projeto foi desenvolvido com base no conhecimento adquirido no curso "Start
     ```bash
     ./vendor/bin/sail npm run dev
     ```
+    
+11. Tudo pronto a aplicação estará disponível em:
+
+    ```bash
+    http://localhost
+    ```
+
 
 # Screenshoots
 

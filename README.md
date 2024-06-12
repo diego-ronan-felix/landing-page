@@ -53,3 +53,24 @@ Este projeto foi desenvolvido com base no conhecimento adquirido no curso "Start
 ![Print de Tela 1](public/img/09.png)
 
 ![Print de Tela 1](public/img/10.png)
+
+## Instalação
+
+### Pré-requisitos
+
+- Docker e Docker Compose instalados na sua máquina.
+
+### Passos
+
+1. Clone o repositório:
+
+    ```bash
+    git clone https://github.com/seu-usuario/nome-do-repositorio.git
+    cd nome-do-repositorio
+    ```
+
+2. Copie o arquivo `.env.example` para `.env` e configure as variáveis de ambiente conforme necessário:
+
+    ```bash
+    cp .env.example .env
+    ```

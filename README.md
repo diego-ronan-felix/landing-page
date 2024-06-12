@@ -16,7 +16,17 @@ Este projeto foi desenvolvido com base no conhecimento adquirido no curso "Start
 - **Laravel Sail**: Ambiente de desenvolvimento em Docker.
 - **Mailpit**: Para teste de envio de emails durante o desenvolvimento.
 
-## Funcionalidades
+## Durante o curso, aprendi a:
+
+- Utilizar Tailwind CSS para estilização rápida e responsiva.
+
+- Implementar interatividade dinâmica com Alpine.js.
+
+- Desenvolver aplicações robustas com o framework PHP Laravel.
+
+- Criar componentes dinâmicos e reativos com Livewire.
+
+## Funcionalidades do app
 
 - **Inscrição por Email**: Usuários podem se inscrever na landing page utilizando seu email.
 - **Gerenciamento de Inscritos**: Interface administrativa para listar, pesquisar e deletar inscritos.

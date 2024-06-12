@@ -22,7 +22,7 @@
                 <thead class="text-indigo-700 border-b-2 border-gray-300">
                     <tr>
                     <th class="px-6 py-3 text-left">E-mail</th>
-                    <th class="px-6 py-3 text-left">Verified</th>
+                    <th class="px-6 py-3 text-left">Verificado</th>
                     <th></th>
                     </tr>
                 </thead>
@@ -31,7 +31,7 @@
                     <tr class="text-sm border-b border-gray-400">
                         <td class="px-6 py-4">{{ $subscriber->email }}</td>
                         <td class="px-6 py-4">
-                        {{ optional($subscriber->email_verified_at)   ->diffForHumans() ?? 'Never verified' }}
+                        {{ optional($subscriber->email_verified_at)   ->diffForHumans() ?? 'Não verificado!' }}
                         </td>
                         <td class="px-6 py-4">
                             <x-primary-button 

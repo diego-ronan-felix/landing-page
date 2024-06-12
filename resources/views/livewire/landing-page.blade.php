@@ -71,7 +71,7 @@
             &check;
         </p>
         <p class="mt-16 text-5xl font-extrabold text-center text-white">
-            Great!
+            Ótimo!
         </p>
         @if (request()->has('verified') && request()->verified == 1)
             <p class="text-3xl text-center text-white">

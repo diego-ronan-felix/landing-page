@@ -61,6 +61,10 @@ Este projeto foi desenvolvido com base no conhecimento adquirido no curso "Start
     DB_DATABASE=laravel
     DB_USERNAME=sail
     DB_PASSWORD=password
+
+    MAIL_MAILER=smtp
+    MAIL_HOST=mailpit
+    MAIL_PORT=1025
     ```
    
 3. Instale as dependências do projeto:

@@ -30,7 +30,37 @@ Este projeto foi desenvolvido com base no conhecimento adquirido no curso "Start
 
 - **Inscrição por Email**: Usuários podem se inscrever na landing page utilizando seu email.
 - **Gerenciamento de Inscritos**: Interface administrativa para listar, pesquisar e deletar inscritos.
-  
+
+## Instalação
+
+### Pré-requisitos
+
+- Docker e Docker Compose instalados na sua máquina.
+
+### Passos
+
+1. Clone o repositório:
+
+    ```bash
+    git clone https://github.com/diego-ronan-felix/landing-page.git
+    cd landing-page
+    ```
+
+2. Copie o arquivo `.env.example` para `.env` e configure as variáveis de ambiente conforme necessário:
+
+    ```bash
+    cp .env.example .env
+    ```
+3. Instale as dependências do projeto:
+
+    ```bash
+    docker run --rm \
+    -u "$(id -u):$(id -g)" \
+    -v "$(pwd):/var/www/html" \
+    -w /var/www/html \
+    laravelsail/php83-composer:latest \
+    composer install --ignore-platform-reqs
+    ```
 
 # Screenshoots
 
@@ -53,24 +83,3 @@ Este projeto foi desenvolvido com base no conhecimento adquirido no curso "Start
 ![Print de Tela 1](public/img/09.png)
 
 ![Print de Tela 1](public/img/10.png)
-
-## Instalação
-
-### Pré-requisitos
-
-- Docker e Docker Compose instalados na sua máquina.
-
-### Passos
-
-1. Clone o repositório:
-
-    ```bash
-    git clone https://github.com/seu-usuario/nome-do-repositorio.git
-    cd nome-do-repositorio
-    ```
-
-2. Copie o arquivo `.env.example` para `.env` e configure as variáveis de ambiente conforme necessário:
-
-    ```bash
-    cp .env.example .env
-    ```

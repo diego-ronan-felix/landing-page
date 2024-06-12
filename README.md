@@ -16,4 +16,24 @@ Este é um projeto de uma landing page simples com um sistema de inscrição e g
 - **Inscrição por Email**: Usuários podem se inscrever na landing page utilizando seu email.
 - **Gerenciamento de Inscritos**: Interface administrativa para listar, pesquisar e deletar inscritos.
 
+## Screenshoots
+
 ![Print de Tela 1](public/img/01.png)
+
+![Print de Tela 1](public/img/02.png)
+
+![Print de Tela 1](public/img/03.png)
+
+![Print de Tela 1](public/img/04.png)
+
+![Print de Tela 1](public/img/05.png)
+
+![Print de Tela 1](public/img/06.png)
+
+![Print de Tela 1](public/img/07.png)
+
+![Print de Tela 1](public/img/08.png)
+
+![Print de Tela 1](public/img/09.png)
+
+![Print de Tela 1](public/img/10.png)
